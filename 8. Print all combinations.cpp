@@ -2,10 +2,8 @@
 #define MAX_POINT 3
 #define ARR_SIZE 100
 #include<stdio.h>
- 
 
 void printArray(int arr[], int arr_size);
- 
 
 void printCompositions(int n, int i)
 {
