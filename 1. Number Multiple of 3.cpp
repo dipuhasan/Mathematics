@@ -1,3 +1,4 @@
+// Write an Efficient Method to Check if a Number is Multiple of 3
 #include<bits/stdc++.h>
 using namespace std;
 int isMultipleOf3(int n)
