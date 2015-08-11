@@ -3,14 +3,10 @@
 void printArray (int arr[], int n);
 int AreAll9s (int num[], int n );
 
-
 void generateNextPalindromeUtil (int num[], int n )
 {
-   
     int mid = n/2;
-
     bool leftsmaller = false;
-
     int i = mid - 1;
 
     int j = (n % 2)? mid + 1 : mid;
@@ -58,9 +54,7 @@ void generateNextPalindromeUtil (int num[], int n )
 void generateNextPalindrome( int num[], int n )
 {
     int i;
-
     printf("\nNext palindrome is:\n");
-
     if( AreAll9s( num, n ) )
     {
         printf( "1 ");
@@ -68,7 +62,6 @@ void generateNextPalindrome( int num[], int n )
             printf( "0 " );
         printf( "1" );
     }
-
     else
     {
         generateNextPalindromeUtil ( num, n );
@@ -96,17 +89,16 @@ void printArray(int arr[], int n)
     printf("\n");
 }
 
-
 int main()
 {
     int num[] = {9, 4, 1, 8, 7, 9, 7, 8, 3, 2, 2};
-
     int n = sizeof (num)/ sizeof(num[0]);
 
     generateNextPalindrome( num, n );
 
     return 0;
 }
+/*-------------------------------*/
 
 Next palindrome is:
 9 4 1 8 8 0 8 8 1 4 9
