@@ -7,6 +7,7 @@ int main()
 
     for(i = 2; i<=limit; i++)
         primes[i] = 1;
+        
     //sqrt(limit)
     for(i = 2; i<=sqrt(limit); i++)
         for(j = i; i*j<=limit; j++)
